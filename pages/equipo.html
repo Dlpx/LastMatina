@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equipo | Matina</title>
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="../img/Logo-Azul.png" type="image/x-icon">
+    <!-- Link a BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Link a FA -->
+    <script src="https://kit.fontawesome.com/563302694c.js" crossorigin="anonymous"></script>
+    <!-- Link a Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link a mis estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-azul">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/Matina-Verde.png" alt="logo matina"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./terapias.html">Terapias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./encuentranos.html">Encuentranos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ingreso
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./usuarios.html">Usuarios</a></li>
+                                <li><a class="dropdown-item" href="./profesionales.html">Profesionales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="equipo">
+        <section class="equipoGrid">
+            <form class="navBar" action="#" method="get">
+                <div class="especialidad">
+                    <p class="negrita">Especialidad</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="medicina" value="Medicina">
+                            <label for="medicina"> Medicina</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fisioterapia" value="Fisioterapia">
+                            <label for="fisioterapia"> Fisioterapia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="nutricion" value="Nutrición">
+                            <label for="nutricion"> Nutrición</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="estetica" value="Estetica">
+                            <label for="estetica"> Estetica</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sede">
+                    <p class="negrita">Sede</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="entreRios" value="Entre Rios">
+                            <label for="entreRios">Entre Rios</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="buenosAires" value="Buenos Aires">
+                            <label for="buenosAires">Buenos Aires</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="santaCruz" value="Santa Cruz">
+                            <label for="santaCruz">Santa Cruz</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Filtrar</button>
+            </form>
+            <div class="header">
+                <h1>Equipo de profesionales</h1>
+                <form action="#" method="get">
+                    <input class="busqueda" type="search" name="Busqueda" placeholder="Busca tu terapeuta">
+                </form>
+            </div>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="../img/profesionales/allen.jpg" alt="Dr. Allen">
+                    <p>Dr. Ricardo Allen</p>
+                    <p>Cirugia estetica y General</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/afleck.jpg" alt="Med. Afleck">
+                    <p>Med. Benicio Afleck</p>
+                    <p>Medicina General</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/berry.jpg" alt="Dra. Berry">
+                    <p>Dra. Carla Berry</p>
+                    <p>Traumatologia y Deportologia</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/bieber.jpg" alt="Med. Bieber">
+                    <p>Med. Justo Bieber </p>
+                    <p>Medicina Deportiva</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/Caprio.jpg" alt="Lic. Caprio">
+                    <p>Lic. Leonel Caprio</p>
+                    <p>Fisioterapia y rehabilitacion</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/gregor.jpg" alt="Lic. Gregor">
+                    <p>Lic. Marcos Gregor</p>
+                    <p>Rehabilitacion Neurologica</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/johansson.jpg" alt="Lic. Johansson">
+                    <p>Lic. Carla Johansson</p>
+                    <p>Rehabilitacion Pulmonar</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/kutcher.jpg" alt="Lic. Kutcher">
+                    <p>Lic. Airton Kutcher</p>
+                    <p>Estimulacion Temprana</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/lawrence.jpg" alt="Lic. Lawrence">
+                    <p>Lic. Juana Lawrence</p>
+                    <p>Nutricion</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/oNeal.jpg" alt="Lic. O'Neal">
+                    <p>Lic. Ramiro O'Neal</p>
+                    <p>Nutricionista Deportivo</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/perry.jpg" alt="Dra. Perry">
+                    <p>Dra. Katerina Perry</p>
+                    <p>Médico Esteticista</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/profesionales/waltz.jpg" alt="Dr. Waltz">
+                    <p>Dr. Francisco Waltz</p>
+                    <p>Médico Esteticista</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12"><img src="../img/Logo-Verde.png" alt="Logo matina"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12"><a class="c-verde" href="#">Volver Arriba</a></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <a class="c-verde" href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a class="c-verde" href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a class="c-verde" href="https://www.youtube.com" target="_blank">Youtube</a>
+                </div>
+            </div>
+            <div class="row info-container">
+                <div class="col-lg-4 info-box">
+                    <p>Información</p>
+                    <a href="https://goo.gl/maps/zRRiirciZdtPa8RR7" target="_blank">Dir.: Av. Cayma 630, A</a>
+                    <a href="https://web.whatsapp.com/" target="_blank">Te: 932 308 808</a>
+                    <a href="mailto:kinesiologodecarlo@gmail.com" target="_blank">Correo:
+                        kinesiologodecarlo@gmail.com</a>
+                    <a href="https://www.instagram.com" target="_blank">IG: @kinesiologodecarlo</a>
+                    <a href="https://www.facebook.com" target="_blank">kinesiologodecarlo</a>
+                    <a href="https://www.youtube.com" target="_blank">kinesiologodecarlo</a>
+                </div>
+                <div class="col-lg-4 info-box">
+                    <p>Legales</p>
+                    <a href="#">Libro Reclamaciones</a>
+                    <a href="#">Derechos y obligaciones</a>
+                </div>
+                <div class="col-lg-4 info-box">
+                    <p>Developer</p>
+                    <a href="https://www.instagram.com">@minombre</a>
+                    <a href="mailto:kinesiologodecarlo@gmail.com">micorreo@gmail.com</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Link a JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

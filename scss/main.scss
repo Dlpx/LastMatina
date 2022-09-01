@@ -1,0 +1,36 @@
+//Reseteo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+//Importar Variables
+@import './variables/variables';
+//Importar Paginas
+@import './parciales/header';
+@import './parciales/footer';
+@import './parciales/inicio';
+@import './parciales/terapias';
+@import './parciales/equipo';
+@import './parciales/encuentranos';
+@import './parciales/profesionales';
+@import './parciales/usuarios';
+
+//Estilos Comunes
+.bg-azul {
+  background-color: #008583;
+}
+.bg-verde {
+  background-color: #c9e881;
+}
+.c-azul {
+  color: #008583;
+}
+.c-verde {
+  color: #c9e881;
+}
+.c-gris {
+  color: #c0ceda;
+}

@@ -42,11 +42,11 @@ header {
   justify-content: flex-end;
 }
 /* Footer */
-footer {
+.footer {
   width: 100%;
   background-color: #008583;
 }
-footer .container .row {
+.footer .container .row {
   padding: 10px 0 10px;
 }
 footer .info-container div p {

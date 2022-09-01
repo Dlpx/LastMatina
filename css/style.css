@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+  header .me-auto {
+    margin: 0 !important; }
+  header .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.5); }
+  header .navbar-nav .nav-link.active,
+  header .navbar-nav .show > .nav-link {
+    color: white; }
+  header .navbar-nav .nav-link {
+    font-size: large;
+    color: #c9e881;
+    margin: 0 15px;
+    border-radius: 10px; }
+  header .nav-item .nav-link:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4); }
+  header .navbar {
+    background-color: #008583;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
+  header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+
+.footer {
+  width: 100%;
+  background-color: #008583; }
+  .footer__container .row {
+    padding: 10px 0 10px; }
+  .footer__info-container div p {
+    color: #c0ceda;
+    font-weight: bold;
+    text-decoration: underline; }
+  .footer__info-container div a {
+    color: #c0ceda;
+    text-decoration: none; }
+  .footer__info-container .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 25px; }
+
+.inicio {
+  width: 100%; }
+  .inicio .contenedor1 {
+    width: 100%;
+    height: 95vh;
+    background-image: url("../img/fotoMatina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; }
+    .inicio .contenedor1 .textos {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0)); }
+      .inicio .contenedor1 .textos h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 2px 2px 4px black; }
+      .inicio .contenedor1 .textos h3 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0.5px 0.5px 1px black; }
+  .inicio .contenedor2 {
+    background-color: #fefefe; }
+    .inicio .contenedor2 div p {
+      margin: 90px 0;
+      font-size: 1.5rem; }
+  .inicio .contenedor3 {
+    width: 100%;
+    margin: 0;
+    background-color: #c9e881; }
+    .inicio .contenedor3 .contenedor-icono {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0; }
+      .inicio .contenedor3 .contenedor-icono img {
+        max-width: 150px; }
+  .inicio .contenedor4 .carousel .carousel-inner .carousel-item {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    .inicio .contenedor4 .carousel .carousel-inner .carousel-item p {
+      width: 100%;
+      height: 100%;
+      padding-top: 200px;
+      padding-right: 50px;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: right;
+      background: linear-gradient(90deg, rgba(65, 65, 65, 0), rgba(65, 65, 65, 0.84)); }
+    .inicio .contenedor4 .carousel .carousel-inner .carousel-item:nth-child(1) {
+      background-image: url(https://www.techtitute.com/techtitute/cursos/005174942/recursos/banner/estudiar-futuro-fisioterapia-atencion-temprana.jpg); }
+    .inicio .contenedor4 .carousel .carousel-inner .carousel-item:nth-child(2) {
+      background-image: url(https://www.techtitute.com/techtitute/cursos/0055261/recursos/banner/atencion-centrada-persona-fisioterapia-portada-.jpg); }
+    .inicio .contenedor4 .carousel .carousel-inner .carousel-item:nth-child(3) {
+      background-image: url(https://www.extra.com.pe/wp-content/uploads/2022/08/Municipalidad-de-San-Borja-1280x720.jpg); }
+
+.terapias .contenedorT {
+  width: 100%;
+  height: auto;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+  .terapias .contenedorT__caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    max-width: 1500px;
+    height: auto;
+    border-radius: 20px;
+    transition: all 150ms ease-in-out; }
+    .terapias .contenedorT__caja img {
+      width: 250px;
+      margin-right: 30px;
+      border-radius: 20px 20px 0 20px; }
+    .terapias .contenedorT__caja .texto {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .terapias .contenedorT__caja .texto h3 {
+        height: 35%;
+        font-size: 2rem; }
+      .terapias .contenedorT__caja .texto p {
+        height: 35%;
+        font-size: 1.5rem; }
+    .terapias .contenedorT__caja:hover {
+      transform: scale(1.05);
+      background-image: linear-gradient(90deg, rgba(128, 128, 128, 0.768), rgba(128, 128, 128, 0.009)); }
+
+.equipo {
+  background-color: #f1f1f1; }
+  .equipo .eqpGrid {
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 280px 5fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "eqpGrid__navBar eqpGrid__header" "eqpGrid__navBar eqpGrid__tarjetas";
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    .equipo .eqpGrid__navBar {
+      grid-area: eqpGrid__navBar;
+      display: flex;
+      flex-direction: column;
+      padding: 150px 30px 0 30px;
+      background-color: white;
+      border-right: 1px gray solid; }
+      .equipo .eqpGrid__navBar div {
+        border-top: 1px gray solid;
+        padding-top: 30px;
+        margin-bottom: 50px; }
+      .equipo .eqpGrid__navBar button {
+        align-self: flex-end;
+        width: 80px;
+        height: 30px;
+        background-color: rgba(128, 128, 128, 0.1);
+        color: black;
+        border: 1px gray solid;
+        border-radius: 10px; }
+        .equipo .eqpGrid__navBar button:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 10px rgba(128, 128, 128, 0.2);
+          cursor: pointer; }
+    .equipo .eqpGrid__header {
+      grid-area: eqpGrid__header;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+      border-bottom: 1px grey solid;
+      background-color: white; }
+      .equipo .eqpGrid__header .busqueda {
+        height: 40px;
+        width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px grey solid; }
+    .equipo .eqpGrid__tarjetas {
+      grid-area: eqpGrid__tarjetas;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 80px; }
+      .equipo .eqpGrid__tarjetas .tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        background-color: rgba(179, 179, 179, 0.5);
+        box-shadow: 1px 1px 5px black; }
+        .equipo .eqpGrid__tarjetas .tarjeta img {
+          width: 250px; }
+        .equipo .eqpGrid__tarjetas .tarjeta p {
+          line-height: 1.5rem;
+          font-size: large; }
+          .equipo .eqpGrid__tarjetas .tarjeta p:nth-child(2) {
+            font-weight: bold; }
+
+.block {
+  display: block; }
+
+.ingreso {
+  width: 100%;
+  height: auto; }
+  .ingreso h1 {
+    margin: 30px; }
+  .ingreso .form-usuario {
+    padding: 50px;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .ingreso .form-usuario input {
+      width: 300px;
+      height: 2rem;
+      border-radius: 5px;
+      border: 1px grey solid; }
+      .ingreso .form-usuario input:focus {
+        box-shadow: 0 0 5px #cccccc;
+        background-color: rgba(129, 129, 255, 0.05);
+        border: 1px grey solid; }
+    .ingreso .form-usuario label {
+      font-weight: bold;
+      font-size: 1.2rem; }
+    .ingreso .form-usuario p {
+      font-weight: 100;
+      font-size: 0.8rem;
+      font-style: italic; }
+    .ingreso .form-usuario button {
+      padding: 10px;
+      border: 1px gray solid;
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px grey;
+      background-color: transparent; }
+      .ingreso .form-usuario button:active {
+        transform: scale(0.9);
+        background-color: #efefef;
+        box-shadow: none; }
+  .ingreso .help {
+    width: 100%;
+    margin-left: 50%; }
+    .ingreso .help i {
+      color: grey;
+      text-align: center;
+      transition: all 150ms ease-in-out;
+      margin: 100px 0; }
+      .ingreso .help i:hover {
+        transform: scale(4); }
+      .ingreso .help i:active {
+        transform: scale(3);
+        text-shadow: 0 0 1px yellow;
+        color: yellow; }
+    .ingreso .help p {
+      transition: all 75ms ease-in-out; }
+
+.bg-azul {
+  background-color: #008583; }
+
+.bg-verde {
+  background-color: #c9e881; }
+
+.c-azul {
+  color: #008583; }
+
+.c-verde {
+  color: #c9e881; }
+
+.c-gris {
+  color: #c0ceda; }

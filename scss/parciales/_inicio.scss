@@ -1,0 +1,97 @@
+.inicio {
+  width: 100%;
+  .contenedor1 {
+    width: 100%;
+    height: 95vh;
+    background-image: url("../img/fotoMatina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    .textos {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.104),
+        rgba(0, 0, 0, 0)
+      );
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+      }
+      h3 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0.5px 0.5px 1px black;
+      }
+    }
+  }
+  .contenedor2 {
+    background-color: rgb(254, 254, 254);
+    div {
+      p {
+        margin: 90px 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .contenedor3 {
+    width: 100%;
+    margin: 0;
+    background-color: $verde;
+    .contenedor-icono {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+  .contenedor4 {
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          width: 100%;
+          height: 500px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          p {
+            width: 100%;
+            height: 100%;
+            padding-top: 200px;
+            padding-right: 50px;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: right;
+            background: linear-gradient(
+              90deg,
+              rgba(65, 65, 65, 0),
+              rgba(65, 65, 65, 0.84)
+            );
+          }
+          &:nth-child(1){
+            background-image: url(https://www.techtitute.com/techtitute/cursos/005174942/recursos/banner/estudiar-futuro-fisioterapia-atencion-temprana.jpg);
+          }
+          &:nth-child(2){
+            background-image: url(https://www.techtitute.com/techtitute/cursos/0055261/recursos/banner/atencion-centrada-persona-fisioterapia-portada-.jpg);
+          }
+          &:nth-child(3){
+            background-image: url(https://www.extra.com.pe/wp-content/uploads/2022/08/Municipalidad-de-San-Borja-1280x720.jpg);
+          }
+        }
+      }
+    }
+  }
+}

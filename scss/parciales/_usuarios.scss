@@ -1,0 +1,71 @@
+.block {
+  display: block;
+}
+.ingreso {
+  width: 100%;
+  height: auto;
+  h1 {
+    margin: 30px;
+  }
+  .form-usuario {
+    padding: 50px;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    input {
+      width: 300px;
+      height: 2rem;
+      border-radius: 5px;
+      border: 1px grey solid;
+      &:focus {
+        box-shadow: 0 0 5px rgb(204, 204, 204);
+        background-color: rgba(129, 129, 255, 0.05);
+        border: 1px grey solid;
+      }
+    }
+    label {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    p {
+      font-weight: 100;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+    button {
+      padding: 10px;
+      border: 1px gray solid;
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px grey;
+      background-color: transparent;
+      &:active {
+        transform: scale(0.9);
+        background-color: rgb(239, 239, 239);
+        box-shadow: none;
+      }
+    }
+  }
+  .help {
+    width: 100%;
+    margin-left: 50%;
+    i {
+      color: grey;
+      text-align: center;
+      transition: all 150ms ease-in-out;
+      margin: 100px 0;
+      &:hover {
+        transform: scale(4);
+      }
+      &:active {
+        transform: scale(3);
+        text-shadow: 0 0 1px yellow;
+        color: yellow;
+      }
+    }
+    p {
+      transition: all 75ms ease-in-out;
+    }
+  }
+}

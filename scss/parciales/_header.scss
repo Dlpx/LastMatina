@@ -1,0 +1,33 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .me-auto {
+    margin: 0 !important;
+  }
+  .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: white;
+  }
+  .navbar-nav .nav-link {
+    font-size: large;
+    color: $verde;
+    margin: 0 15px;
+    border-radius: 10px;
+  }
+  .nav-item .nav-link:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .navbar {
+    background-color: $azul;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}

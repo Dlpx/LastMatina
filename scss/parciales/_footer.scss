@@ -1,0 +1,28 @@
+.footer{
+    width: 100%;
+    background-color: $azul;
+    &__container{
+        .row{
+            padding: 10px 0 10px;
+        }
+    }
+    &__info-container{
+        div{
+            p{
+                color: $gris;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            a{
+                color: $gris;
+                text-decoration: none;
+            }
+        }
+        .info-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 25px;
+        }
+    }
+}

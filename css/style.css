@@ -226,26 +226,32 @@ header {
           .equipo .eqpGrid__tarjetas .tarjeta p:nth-child(2) {
             font-weight: bold; }
 
-.contacto {
+.encuentranos h1 {
+  font-weight: bolder;
+  color: #008583; }
+
+.encuentranos .contacto {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
-  .contacto__seccion1 .sede iframe {
+  justify-content: space-between; }
+  .encuentranos .contacto__seccion1 .sede iframe {
     width: 560px;
     height: 315px; }
-  .contacto__seccion2 {
+    .encuentranos .contacto__seccion1 .sede iframe h1 {
+      font-weight: bolder; }
+  .encuentranos .contacto__seccion2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px auto; }
-    .contacto__seccion2 .show {
+    .encuentranos .contacto__seccion2 .show {
       overflow: hidden;
       width: 360px;
       height: 100px;
       border-radius: 10px; }
-      .contacto__seccion2 .show .caja {
+      .encuentranos .contacto__seccion2 .show .caja {
         width: 360px;
         height: 100px;
         padding: 0 10px;
@@ -258,31 +264,31 @@ header {
         position: relative;
         left: 265px;
         text-decoration: none; }
-        .contacto__seccion2 .show .caja:hover {
+        .encuentranos .contacto__seccion2 .show .caja:hover {
           transform: translateX(-256px); }
-        .contacto__seccion2 .show .caja i {
+        .encuentranos .contacto__seccion2 .show .caja i {
           height: 100%;
           width: 74px;
           font-size: 3rem;
           color: white;
           text-align: center;
           padding: 25px 0; }
-        .contacto__seccion2 .show .caja p {
+        .encuentranos .contacto__seccion2 .show .caja p {
           margin: 20px 10px;
           font-size: 3rem;
           font-weight: bold;
           color: white; }
 
-.bg-violet {
+.encuentranos .bg-violet {
   background-color: #C13584; }
 
-.bg-red {
+.encuentranos .bg-red {
   background-color: #c4302b; }
 
-.bg-green {
+.encuentranos .bg-green {
   background-color: #25D366; }
 
-.bg-blue {
+.encuentranos .bg-blue {
   background-color: #4267B2; }
 
 .block {

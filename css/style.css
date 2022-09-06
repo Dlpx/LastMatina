@@ -226,70 +226,82 @@ header {
           .equipo .eqpGrid__tarjetas .tarjeta p:nth-child(2) {
             font-weight: bold; }
 
-.encuentranos h1 {
-  font-weight: bolder;
-  color: #008583; }
-
-.encuentranos .contacto {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .encuentranos .contacto__seccion1 .sede iframe {
-    width: 560px;
-    height: 315px; }
-    .encuentranos .contacto__seccion1 .sede iframe h1 {
-      font-weight: bolder; }
-  .encuentranos .contacto__seccion2 {
+.encuentranos {
+  padding: 40px; }
+  .encuentranos h1 {
+    font-weight: bolder;
+    color: #008583; }
+  .encuentranos .contacto {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto; }
-    .encuentranos .contacto__seccion2 .show {
-      overflow: hidden;
-      width: 360px;
-      height: 100px;
-      border-radius: 10px; }
-      .encuentranos .contacto__seccion2 .show .caja {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .encuentranos .contacto__seccion1 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .encuentranos .contacto__seccion1 .sede {
+        margin-top: 50px;
+        transition: all 150ms ease-in-out; }
+        .encuentranos .contacto__seccion1 .sede iframe {
+          width: 560px;
+          height: 315px; }
+          .encuentranos .contacto__seccion1 .sede iframe h1 {
+            font-weight: bolder; }
+        .encuentranos .contacto__seccion1 .sede:hover {
+          transform: scale(1.2); }
+    .encuentranos .contacto__seccion2 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .encuentranos .contacto__seccion2 .show {
+        overflow: hidden;
         width: 360px;
         height: 100px;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 10px;
-        transition: all 300ms ease-in-out;
-        position: relative;
-        left: 265px;
-        text-decoration: none; }
-        .encuentranos .contacto__seccion2 .show .caja:hover {
-          transform: translateX(-256px); }
-        .encuentranos .contacto__seccion2 .show .caja i {
-          height: 100%;
-          width: 74px;
-          font-size: 3rem;
-          color: white;
-          text-align: center;
-          padding: 25px 0; }
-        .encuentranos .contacto__seccion2 .show .caja p {
-          margin: 20px 10px;
-          font-size: 3rem;
-          font-weight: bold;
-          color: white; }
-
-.encuentranos .bg-violet {
-  background-color: #C13584; }
-
-.encuentranos .bg-red {
-  background-color: #c4302b; }
-
-.encuentranos .bg-green {
-  background-color: #25D366; }
-
-.encuentranos .bg-blue {
-  background-color: #4267B2; }
+        border-radius: 10px; }
+        .encuentranos .contacto__seccion2 .show .caja {
+          width: 360px;
+          height: 100px;
+          padding: 0 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 10px;
+          transition: all 300ms ease-in-out;
+          position: relative;
+          left: 265px;
+          text-decoration: none; }
+          .encuentranos .contacto__seccion2 .show .caja:hover {
+            transform: translateX(-256px); }
+          .encuentranos .contacto__seccion2 .show .caja i {
+            height: 100%;
+            width: 74px;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            padding: 25px 0; }
+          .encuentranos .contacto__seccion2 .show .caja p {
+            margin: 20px 10px;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white; }
+  .encuentranos .bg-violet {
+    background-color: #C13584; }
+  .encuentranos .bg-red {
+    background-color: #c4302b; }
+  .encuentranos .bg-green {
+    background-color: #25D366; }
+  .encuentranos .bg-blue {
+    background-color: #4267B2; }
 
 .block {
   display: block; }

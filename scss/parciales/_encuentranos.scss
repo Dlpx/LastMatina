@@ -1,16 +1,27 @@
 .encuentranos {
+  padding: 40px;
   h1 {
     font-weight: bolder;
     color: $azul;
   }
   .contacto {
     width: 100%;
+    height: 100%;
+    margin-top: 40px;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     &__seccion1 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .sede {
+        margin-top: 50px;
+        transition: all 150ms ease-in-out;
         iframe {
           width: 560px;
           height: 315px;
@@ -18,13 +29,17 @@
             font-weight: bolder;
           }
         }
+        &:hover{
+          transform: scale(1.2);
+        }
       }
     }
     &__seccion2 {
+      width: 50%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 50px auto;
       .show {
         overflow: hidden;
         width: 360px;

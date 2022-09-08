@@ -3,7 +3,9 @@
   h1{
     @extend %encabezado;
     @include color($azul);
-    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
   .contenedor1 {
     width: 100%;
@@ -25,7 +27,7 @@
         rgba(0, 0, 0, 0.104),
         rgba(0, 0, 0, 0)
       );
-      h1 {
+      h2 {
         text-align: center;
         font-size: 4rem;
         color: white;

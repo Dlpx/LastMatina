@@ -29,3 +29,5 @@ Modificaciones para mejorar el SEO
     - Utilice las siguientes keywords: matina, ingreso, pacientes, usuarios, salud.
     - Agregue la descripcion: Matina, un nuevo comienzo. Pagina de ingreso al portal de pacientes.
 
+Agregue un Extend y un Mixin para los h1 de mis paginas.
+El mixin seria por si quiero cambiar el color del h1 pero en este caso no sucedio.

@@ -53,3 +53,28 @@
     }
   }
 }
+//Para tablets queda todo igual
+//Para telefonos:
+@media (max-width: 768px){
+  .terapias{
+    .contenedorT{
+      align-items: center;
+      &__caja{
+        display: flex;
+        flex-direction: column;
+        img{
+          width: 80%;
+        }
+        .texto{
+          width: 90%;
+          h3{
+            font-size: 1.5rem;
+          }
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

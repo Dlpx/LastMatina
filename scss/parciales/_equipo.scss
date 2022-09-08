@@ -1,5 +1,6 @@
 .equipo {
   background-color: #f1f1f1;
+
   .eqpGrid {
     max-width: 1600px;
     margin: auto;
@@ -10,18 +11,26 @@
       "eqpGrid__navBar eqpGrid__header"
       "eqpGrid__navBar eqpGrid__tarjetas";
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
     &__navBar {
       grid-area: eqpGrid__navBar;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       padding: 150px 30px 0 30px;
       background-color: white;
       border-right: 1px gray solid;
-      div {
-        border-top: 1px gray solid;
-        padding-top: 30px;
+
+      .especialidad {
+        border-top: 1px black solid;
         margin-bottom: 50px;
       }
+
+      .sede {
+        border-top: 1px black solid;
+        margin-bottom: 50px;
+      }
+
       button {
         align-self: flex-end;
         width: 80px;
@@ -30,6 +39,7 @@
         color: black;
         border: 1px gray solid;
         border-radius: 10px;
+
         &:hover {
           transform: scale(1.1);
           box-shadow: 0 0 10px rgba(128, 128, 128, 0.2);
@@ -37,18 +47,22 @@
         }
       }
     }
+
     &__header {
       grid-area: eqpGrid__header;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding: 0 50px;
       border-bottom: 1px grey solid;
       background-color: white;
-      h1{
+
+      h1 {
         @extend %encabezado;
         @include color($azul);
       }
+
       .busqueda {
         height: 40px;
         width: 250px;
@@ -57,14 +71,16 @@
         border: 1px grey solid;
       }
     }
+
     &__tarjetas {
       grid-area: eqpGrid__tarjetas;
       background-color: white;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 50px 80px;
+
       .tarjeta {
         display: flex;
         flex-direction: column;
@@ -74,14 +90,76 @@
         border-radius: 10px;
         background-color: rgba(179, 179, 179, 0.5);
         box-shadow: 1px 1px 5px black;
+
         img {
           width: 250px;
         }
+
         p {
           line-height: 1.5rem;
           font-size: large;
-          &:nth-child(2){
+
+          &:nth-child(2) {
             font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+//TABLETS
+@media (max-width: 992px) {
+  .equipo {
+    .eqpGrid {
+      max-width: 1600px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 200px auto;
+      grid-template-areas:
+        "eqpGrid__header"
+        "eqpGrid__navBar "
+        "eqpGrid__tarjetas";
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+      &__navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+        .especialidad{
+          width: 200px;
+          margin: auto;
+          border-right: none;
+          border-bottom: 1px black solid;
+          margin: 0;
+          .contenedor{
+            width: 150px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+        .sede{
+          border: none;
+          margin: 0;
+          width: 200px;
+          padding: auto;
+          .contenedor{
+            width: 150px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
           }
         }
       }

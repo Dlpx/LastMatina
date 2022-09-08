@@ -71,12 +71,14 @@ header {
     .inicio .contenedor1 .textos {
       height: 100%;
       width: 100%;
+      padding: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0)); }
       .inicio .contenedor1 .textos h2 {
+        text-transform: uppercase;
         text-align: center;
         font-size: 4rem;
         color: white;
@@ -102,6 +104,18 @@ header {
       padding: 20px 0; }
       .inicio .contenedor3 .contenedor-icono img {
         max-width: 150px; }
+  .inicio .contenedor3mobile {
+    display: none;
+    width: 100%;
+    margin: 0;
+    background-color: #c9e881; }
+    .inicio .contenedor3mobile .contenedor-icono {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0; }
+      .inicio .contenedor3mobile .contenedor-icono img {
+        max-width: 120px; }
   .inicio .contenedor4 .carousel .carousel-inner .carousel-item {
     width: 100%;
     height: 500px;
@@ -124,6 +138,20 @@ header {
       background-image: url(https://www.techtitute.com/techtitute/cursos/0055261/recursos/banner/atencion-centrada-persona-fisioterapia-portada-.jpg); }
     .inicio .contenedor4 .carousel .carousel-inner .carousel-item:nth-child(3) {
       background-image: url(https://www.extra.com.pe/wp-content/uploads/2022/08/Municipalidad-de-San-Borja-1280x720.jpg); }
+
+@media (max-width: 768px) {
+  .inicio .contenedor1 {
+    background-image: url("../img/fotoMatinaMobile.png"); }
+    .inicio .contenedor1 .textos h2 {
+      font-size: 2.5rem; }
+  .inicio .contenedor2 {
+    padding: 0 30px; }
+    .inicio .contenedor2 div p {
+      text-align: center; }
+  .inicio .contenedor3 {
+    display: none; }
+  .inicio .contenedor3mobile {
+    display: block; } }
 
 .terapias h1 {
   color: #008583;
@@ -167,6 +195,21 @@ header {
       transform: scale(1.05);
       background-image: linear-gradient(90deg, rgba(128, 128, 128, 0.768), rgba(128, 128, 128, 0.009)); }
 
+@media (max-width: 768px) {
+  .terapias .contenedorT {
+    align-items: center; }
+    .terapias .contenedorT__caja {
+      display: flex;
+      flex-direction: column; }
+      .terapias .contenedorT__caja img {
+        width: 80%; }
+      .terapias .contenedorT__caja .texto {
+        width: 90%; }
+        .terapias .contenedorT__caja .texto h3 {
+          font-size: 1.5rem; }
+        .terapias .contenedorT__caja .texto p {
+          font-size: 1rem; } }
+
 .equipo {
   background-color: #f1f1f1; }
   .equipo .eqpGrid {
@@ -181,12 +224,15 @@ header {
       grid-area: eqpGrid__navBar;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       padding: 150px 30px 0 30px;
       background-color: white;
       border-right: 1px gray solid; }
-      .equipo .eqpGrid__navBar div {
-        border-top: 1px gray solid;
-        padding-top: 30px;
+      .equipo .eqpGrid__navBar .especialidad {
+        border-top: 1px black solid;
+        margin-bottom: 50px; }
+      .equipo .eqpGrid__navBar .sede {
+        border-top: 1px black solid;
         margin-bottom: 50px; }
       .equipo .eqpGrid__navBar button {
         align-self: flex-end;
@@ -203,6 +249,7 @@ header {
     .equipo .eqpGrid__header {
       grid-area: eqpGrid__header;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding: 0 50px;
@@ -221,8 +268,8 @@ header {
       background-color: white;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 50px 80px; }
       .equipo .eqpGrid__tarjetas .tarjeta {
         display: flex;
@@ -240,6 +287,50 @@ header {
           font-size: large; }
           .equipo .eqpGrid__tarjetas .tarjeta p:nth-child(2) {
             font-weight: bold; }
+
+.negrita {
+  font-weight: bold; }
+
+@media (max-width: 992px) {
+  .equipo .eqpGrid {
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px auto;
+    grid-template-areas: "eqpGrid__header" "eqpGrid__navBar " "eqpGrid__tarjetas";
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    .equipo .eqpGrid__navBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      border: none; }
+      .equipo .eqpGrid__navBar .especialidad {
+        width: 200px;
+        margin: auto;
+        border-right: none;
+        border-bottom: 1px black solid;
+        margin: 0; }
+        .equipo .eqpGrid__navBar .especialidad .contenedor {
+          width: 150px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; }
+      .equipo .eqpGrid__navBar .sede {
+        border: none;
+        margin: 0;
+        width: 200px;
+        padding: auto; }
+        .equipo .eqpGrid__navBar .sede .contenedor {
+          width: 150px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; } }
 
 .encuentranos {
   padding: 40px; }

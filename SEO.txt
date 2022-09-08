@@ -1,0 +1,31 @@
+Modificaciones para mejorar el SEO 
+1- index
+    - El titulo ya lo habia colocado previamente, donde indico el nombre de la pestaña y el de la pagina donde se encuentra el usuario.
+    - Utilice las siguientes Keywords: rehabilitacion, salud, fisioterapia, kinesiologia, deporte, movimiento.
+    - Agregue la descripcion: Matina, un nuevo comienzo para tu salud. Tratamos enfermedades y patologias que alteran e interrumpen tu bienestar. No dudes en contactarnos.
+
+2- Terapias
+    - El titulo ya lo habia colocado previamente, donde indico el nombre de la pestaña y el de la pagina donde se encuentra el usuario.
+    - Utilice las siguientes Keywords: matina, fisioterapia, nutricion, consulta, estetica.
+    - Agregue la descripcion: Matina, un nuevo comienzo. Conoce las terapias que tenemos para ofrecerte.
+
+3- Equipo
+    - El titulo ya lo habia colocado previamente, donde indico el nombre de la pestaña y el de la pagina donde se encuentra el usuario.
+    - Utilice las siguientes Keywords: matina, medico, nutricionista, fisioterapeuta, esteticista, salud.
+    - Agregue la descripcion: Matina, un nuevo comienzo. Conoce al equipo de profesionales encargado de tu tratamiento.
+
+4- Encuentranos
+    - El titulo ya lo habia colocado previamente, donde indico el nombre de la pestaña y el de la pagina donde se encuentra el usuario.
+    - Utilice las siguientes keywords: matina, contacto, ubicacion, direccion, salud, rehabilitacion.
+    - Agregue la descripcion: Matina, un nuevo comienzo. Encuentranos en cualquiera de nuestras sedes y no te olvides de seguirnos en nuestras redes sociales.
+
+5- Ingreso - Profesionales
+    - Modifique el titulo de la pestaña.
+    - Utilice las siguientes keywords: matina, ingreso, profesional, salud.
+    - Agregue la descripcion: perfil profesional de los trabajadores.
+
+6- Ingreso - Usuarios
+    - Modifique el titulo de la pestaña.
+    - Utilice las siguientes keywords: matina, ingreso, pacientes, usuarios, salud.
+    - Agregue la descripcion: Matina, un nuevo comienzo. Pagina de ingreso al portal de pacientes.
+

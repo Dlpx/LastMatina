@@ -5,6 +5,10 @@
   text-decoration: none;
   list-style-type: none; }
 
+.inicio h1, .terapias h1, .equipo .eqpGrid__header h1, .encuentranos h1, .ingreso h1 {
+  font-weight: bolder;
+  font-size: 2.5rem; }
+
 header {
   position: sticky;
   top: 0;
@@ -51,6 +55,9 @@ header {
 
 .inicio {
   width: 100%; }
+  .inicio h1 {
+    color: #008583;
+    display: none; }
   .inicio .contenedor1 {
     width: 100%;
     height: 95vh;
@@ -115,6 +122,10 @@ header {
       background-image: url(https://www.techtitute.com/techtitute/cursos/0055261/recursos/banner/atencion-centrada-persona-fisioterapia-portada-.jpg); }
     .inicio .contenedor4 .carousel .carousel-inner .carousel-item:nth-child(3) {
       background-image: url(https://www.extra.com.pe/wp-content/uploads/2022/08/Municipalidad-de-San-Borja-1280x720.jpg); }
+
+.terapias h1 {
+  color: #008583;
+  margin: 50px; }
 
 .terapias .contenedorT {
   width: 100%;
@@ -195,6 +206,8 @@ header {
       padding: 0 50px;
       border-bottom: 1px grey solid;
       background-color: white; }
+      .equipo .eqpGrid__header h1 {
+        color: #008583; }
       .equipo .eqpGrid__header .busqueda {
         height: 40px;
         width: 250px;
@@ -229,8 +242,8 @@ header {
 .encuentranos {
   padding: 40px; }
   .encuentranos h1 {
-    font-weight: bolder;
-    color: #008583; }
+    color: #008583;
+    margin: 10px; }
   .encuentranos .contacto {
     width: 100%;
     height: 100%;
@@ -262,6 +275,8 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center; }
+      .encuentranos .contacto__seccion2 h2 {
+        margin-bottom: 50px; }
       .encuentranos .contacto__seccion2 .show {
         overflow: hidden;
         width: 360px;
@@ -310,6 +325,7 @@ header {
   width: 100%;
   height: auto; }
   .ingreso h1 {
+    color: #008583;
     margin: 30px; }
   .ingreso .form-usuario {
     padding: 50px;

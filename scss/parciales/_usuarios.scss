@@ -5,6 +5,8 @@
   width: 100%;
   height: auto;
   h1 {
+    @extend %encabezado;
+    @include color ($azul)
     margin: 30px;
   }
   .form-usuario {

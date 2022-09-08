@@ -1,4 +1,9 @@
 .terapias {
+  h1{
+    @extend %encabezado;
+    @include color($azul);
+    margin: 50px;
+  }
   .contenedorT {
     width: 100%;
     height: auto;

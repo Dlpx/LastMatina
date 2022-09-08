@@ -45,6 +45,10 @@
       padding: 0 50px;
       border-bottom: 1px grey solid;
       background-color: white;
+      h1{
+        @extend %encabezado;
+        @include color($azul);
+      }
       .busqueda {
         height: 40px;
         width: 250px;

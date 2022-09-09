@@ -135,13 +135,15 @@
         margin: 0 auto;
         padding: 0;
         border: none;
-        .especialidad{
+
+        .especialidad {
           width: 200px;
           margin: auto;
           border-right: none;
           border-bottom: 1px black solid;
           margin: 0;
-          .contenedor{
+
+          .contenedor {
             width: 150px;
             margin: auto;
             display: flex;
@@ -149,17 +151,62 @@
             align-items: flex-start;
           }
         }
-        .sede{
+
+        .sede {
           border: none;
           margin: 0;
           width: 200px;
           padding: auto;
-          .contenedor{
+
+          .contenedor {
             width: 150px;
             margin: auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+//TeLEFONOS
+
+@media (max-width: 768px) {
+  .equipo {
+    .eqpGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px auto;
+      grid-template-areas:
+        "eqpGrid__header"
+        "eqpGrid__tarjetas";
+
+      &__navBar {
+        display: none;
+      }
+
+      &__header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 20px;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .busqueda {
+          height: 20px;
+          width: 200px;
+        }
+      }
+
+      &__tarjetas {
+        padding: 40px;
+        .tarjeta{
+          img{
+            width: 200px;
           }
         }
       }

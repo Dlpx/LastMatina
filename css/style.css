@@ -58,8 +58,9 @@ header {
   .inicio h1 {
     color: #008583;
     position: absolute;
-    top: 0;
-    z-index: 1; }
+    top: -10;
+    z-index: 1;
+    visibility: hidden; }
   .inicio .contenedor1 {
     width: 100%;
     height: 95vh;
@@ -143,7 +144,9 @@ header {
   .inicio .contenedor1 {
     background-image: url("../img/fotoMatinaMobile.png"); }
     .inicio .contenedor1 .textos h2 {
-      font-size: 2.5rem; }
+      font-size: 2rem; }
+    .inicio .contenedor1 .textos h3 {
+      font-size: 1.5rem; }
   .inicio .contenedor2 {
     padding: 0 30px; }
     .inicio .contenedor2 div p {
@@ -332,6 +335,28 @@ header {
           flex-direction: column;
           align-items: flex-start; } }
 
+@media (max-width: 768px) {
+  .equipo .eqpGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "eqpGrid__header" "eqpGrid__tarjetas"; }
+    .equipo .eqpGrid__navBar {
+      display: none; }
+    .equipo .eqpGrid__header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 20px; }
+      .equipo .eqpGrid__header h1 {
+        font-size: 2rem; }
+      .equipo .eqpGrid__header .busqueda {
+        height: 20px;
+        width: 200px; }
+    .equipo .eqpGrid__tarjetas {
+      padding: 40px; }
+      .equipo .eqpGrid__tarjetas .tarjeta img {
+        width: 200px; } }
+
 .encuentranos {
   padding: 40px; }
   .encuentranos h1 {
@@ -358,8 +383,6 @@ header {
         .encuentranos .contacto__seccion1 .sede iframe {
           width: 560px;
           height: 315px; }
-          .encuentranos .contacto__seccion1 .sede iframe h1 {
-            font-weight: bolder; }
         .encuentranos .contacto__seccion1 .sede:hover {
           transform: scale(1.2); }
     .encuentranos .contacto__seccion2 {
@@ -402,6 +425,19 @@ header {
             font-size: 3rem;
             font-weight: bold;
             color: white; }
+    .encuentranos .contacto__seccion3 {
+      visibility: hidden;
+      z-index: 10;
+      position: fixed;
+      top: 50%;
+      right: 20px; }
+      .encuentranos .contacto__seccion3 i {
+        font-size: 2rem;
+        color: white;
+        background-color: #25D366;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 1px 1px 5px black; }
   .encuentranos .bg-violet {
     background-color: #C13584; }
   .encuentranos .bg-red {
@@ -410,6 +446,24 @@ header {
     background-color: #25D366; }
   .encuentranos .bg-blue {
     background-color: #4267B2; }
+
+@media (max-width: 992px) {
+  .encuentranos .contacto {
+    flex-direction: column;
+    align-items: center; }
+    .encuentranos .contacto__seccion1 {
+      width: 80%; }
+    .encuentranos .contacto__seccion2 {
+      display: none; } }
+
+@media (max-width: 768px) {
+  .encuentranos .contacto__seccion1 h2 {
+    text-align: center; }
+  .encuentranos .contacto__seccion1 .sede iframe {
+    width: 280px;
+    height: 158px; }
+  .encuentranos .contacto__seccion3 {
+    visibility: visible; } }
 
 .block {
   display: block; }
@@ -469,6 +523,12 @@ header {
         color: yellow; }
     .ingreso .help p {
       transition: all 75ms ease-in-out; }
+
+@media (max-width: 768px) {
+  .ingreso .form-usuario input {
+    max-width: 200px; }
+  .ingreso .form-usuario label {
+    font-size: 1rem; } }
 
 .bg-azul {
   background-color: #008583; }

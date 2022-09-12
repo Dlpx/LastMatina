@@ -8,7 +8,8 @@
 
   h1 {
     @extend %encabezado;
-    @include color ($azul) margin: 30px;
+    @include color ($azul); 
+    margin: 30px;
   }
 
   .form-usuario {

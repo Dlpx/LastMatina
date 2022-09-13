@@ -53,6 +53,10 @@ header {
     justify-content: flex-start;
     margin-top: 25px; }
 
+.row {
+  margin: 0;
+  padding: 0; }
+
 .inicio {
   width: 100%; }
   .inicio h1 {
@@ -142,7 +146,8 @@ header {
 
 @media (max-width: 768px) {
   .inicio .contenedor1 {
-    background-image: url("../img/fotoMatinaMobile.png"); }
+    background-image: url("../img/fotoMatinaMobile.png");
+    background-attachment: scroll; }
     .inicio .contenedor1 .textos h2 {
       font-size: 2rem; }
     .inicio .contenedor1 .textos h3 {
@@ -501,6 +506,7 @@ header {
       padding: 10px;
       border: 1px gray solid;
       border-radius: 10px;
+      color: black;
       box-shadow: 1px 1px 2px grey;
       background-color: transparent; }
       .ingreso .form-usuario button:active {
